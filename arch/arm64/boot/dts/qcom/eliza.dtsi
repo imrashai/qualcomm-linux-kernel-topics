@@ -1550,16 +1550,15 @@
 				 <&mdss_dsi0_phy DSI_PIXEL_PLL_CLK>,
 				 <&mdss_dsi1_phy DSI_BYTE_PLL_CLK>,
 				 <&mdss_dsi1_phy DSI_PIXEL_PLL_CLK>,
-				 <0>,
-				 <0>,
-				 // <&usb_dp_qmpphy QMP_USB43DP_DP_LINK_CLK>,
-				 // <&usb_dp_qmpphy QMP_USB43DP_DP_VCO_DIV_CLK>,
+				 <&usb_dp_qmpphy QMP_USB43DP_DP_LINK_CLK>,
+				 <&usb_dp_qmpphy QMP_USB43DP_DP_VCO_DIV_CLK>,
 				 <0>, /* dp1 */
 				 <0>,
 				 <0>, /* dp2 */
 				 <0>,
 				 <0>, /* dp3 */
-				 <0>;
+				 <0>,
+				 <0>; /* HDMI phy */
 
 			power-domains = <&rpmhpd RPMHPD_MX>;
 			required-opps = <&rpmhpd_opp_low_svs>;
